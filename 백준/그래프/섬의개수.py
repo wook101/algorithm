@@ -44,20 +44,22 @@ def dfs(startX,startY,h,w,matrix,visit):
                 # 재귀를 사용할 경우 파이썬에서 기본 재귀 깊이가 1000으로 제한되어 있어서 런타임 에러발생
                 # 스택으로 구현
 
-while True:
-    w,h=map(int,input().split())
-    if w==0 and h==0:
-        break
+def solution():
+    while True:
+        w,h=map(int,input().split())
+        if w==0 and h==0:
+            break
 
-    matrix = [list(map(int,input().split())) for _ in range(h)]
-    visit=[[0]*w for _ in range(h)]
-    cnt = 0
+        matrix = [list(map(int,input().split())) for _ in range(h)]
+        visit=[[0]*w for _ in range(h)]
+        cnt = 0
 
-    for i in range(h):
-        for j in range(w):
-            if not visit[i][j] and matrix[i][j]:
-                visit[i][j]=1
-                cnt+=1
-                dfs(i,j,h,w,matrix,visit)
+        for i in range(h):
+            for j in range(w):
+                if not visit[i][j] and matrix[i][j]:
+                    visit[i][j]=1
+                    cnt+=1
+                    dfs(i,j,h,w,matrix,visit)
+        print(cnt)
 
-    print(cnt)
+solution()
