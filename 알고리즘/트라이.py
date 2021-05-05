@@ -38,3 +38,4 @@ trie.insert("ac")
 trie.insert("dbc")
 print(trie.head.children["a"].children)
 print(trie.search("abc"))
+
