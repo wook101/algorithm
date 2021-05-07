@@ -36,6 +36,7 @@ trie = Trie()
 trie.insert("abc")
 trie.insert("ac")
 trie.insert("dbc")
+trie.insert("abcd")
 print(trie.head.children["a"].children)
 print(trie.search("abc"))
-
+print(trie.search("abcd"))
