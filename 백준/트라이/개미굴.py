@@ -17,9 +17,9 @@ class Trie:
             cur_node=cur_node.children[st]
 
 
-def dfs(v):
+def dfs(root):
     result = []
-    stack = [(v,"")]
+    stack = [(root,"")]
 
     while stack:
         node,layer = stack.pop()
@@ -42,8 +42,8 @@ def solution():
     for strArr in data:
         trie.insert(strArr)
 
-    node = trie.head
-    return dfs(node)
+    root = trie.head
+    return dfs(root)
 
 
 print(solution())
