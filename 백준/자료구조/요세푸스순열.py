@@ -16,7 +16,7 @@ def solution():
         popNum = arr.pop(idx)       #리스트(arr)에서 현재 인덱스(idx)의 요소를 꺼낸다.
         result.append(str(popNum))  #꺼낸 요소를 임시 리스트(result)에 저장
         if not arr: break
-        if idx+k-1 > len(arr)-1:    #인덱스 값이 배열의 길이를 넘어가면
+        if idx+k-1 > len(arr)-1:    #현재 인덱스 범위가 배열의 길이를 넘어가면
             idx=(idx+k-1)%len(arr)  #나머지 연산으로 꺼낼 인덱스의 위치를 지정해준다.
         else:
             idx+=k-1
