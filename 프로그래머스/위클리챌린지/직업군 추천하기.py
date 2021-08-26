@@ -1,5 +1,4 @@
 def solution(table, languages, preference):
-    answer = ''
     size = len(table)
     data = [{} for _ in range(size)]
     tmp = [[] for _ in range(size)]
@@ -24,3 +23,8 @@ def solution(table, languages, preference):
     result = sorted(tmp, key=lambda x: (-x[1], x[0]))
 
     return result[0][0]
+
+
+
+a = ["tt","ee"]
+print(a.index("ee"))
