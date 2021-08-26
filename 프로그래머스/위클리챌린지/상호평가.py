@@ -30,3 +30,4 @@ def solution(scores):
         result.append(getGrade(avg))
 
     return ''.join(result)
+
