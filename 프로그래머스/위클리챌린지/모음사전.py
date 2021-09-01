@@ -1,8 +1,8 @@
 def recursion(collection,tmp,cnt,dictionary):
     for i in range(5):
         if len(tmp)==5: return
-        tmp.append(collection[i])
         cnt[0]+=1
+        tmp.append(collection[i])
         dictionary[''.join(tmp)] = cnt[0]
         recursion(collection,tmp,cnt,dictionary)
         tmp.pop()
