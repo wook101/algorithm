@@ -9,7 +9,7 @@ class Node:
         self.next = None            #next: 다음 행의 주소 (주소)
         self.number = number        #number: 현재 행의 번호 (값)
 
-class dubleLinkedList:
+class doubleLinkedList:
     def __init__(self):
         self.head = Node()          #head노드 생성
         self.cursor = Node()        #현재 행을 가르키고 있는 cursor
@@ -70,7 +70,7 @@ class dubleLinkedList:
         return ''.join(res)
 
 def solution(n, k, cmd):
-    dll = dubleLinkedList()
+    dll = doubleLinkedList()
     dll.init_connect(n)     #행의 개수(n) 만큼 노드 연결하기
     dll.init_cursor(k)      #cursor를 k위치로 설정
 
