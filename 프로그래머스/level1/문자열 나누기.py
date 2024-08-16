@@ -21,5 +21,6 @@ def solution(s):
             tmp = ""
     if len(tmp) > 0:
         res.append(tmp)
-
+    d = {}
+    d.keys()
     return len(res)
